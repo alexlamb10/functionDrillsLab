@@ -286,7 +286,18 @@ let loser = 'Glimmer'
 
 //CODE HERE
 
-
+// theEliminator Function
+function theEliminator(contestants, loser){
+  // loop through the contestants array
+  for(let i = 0; i < contestants.length; i++){
+    //Check to see if loser is one of the contestents
+    if(loser === contestants[i]){
+      contestants.splice(i, 1)
+    }
+  }
+return contestants
+}
+console.log(theEliminator(contestants, loser))
 ////////////////// PROBLEM 17 ////////////////////
 let sampleString = "Hi, my name is Kylo."
 /*
@@ -295,7 +306,11 @@ let sampleString = "Hi, my name is Kylo."
 */
 
 //CODE HERE
-
+const stringToUpper = function(sampleString) {
+  sampleString = sampleString.toUpperCase();
+  console.log(sampleString)
+}
+stringToUpper(sampleString)
 
 ////////////////// PROBLEM 18 ////////////////////
 /*
@@ -307,6 +322,22 @@ let sampleString = "Hi, my name is Kylo."
   If it does, return 'email verified' and if doesn't, 
   return 'must provide a valid email address'
 */
+//included @
+let includesAt = false;
+let email = '    alexlamb104@gmail.com   '
+//Email Check function
+
+function emailCheck (email) {
+  //Trim whitespace
+  email = email.trim()
+  if(email.includes('@')){
+    includesAt = true;
+    return 'email verified' 
+  }else{
+    return 'must provide a valid email address'
+  }
+}
+console.log(emailCheck(email))
 
 ////////////////// PROBLEM 19 ////////////////////
 /*
@@ -315,6 +346,13 @@ let sampleString = "Hi, my name is Kylo."
 */
 
 //CODE HERE
+function buyingChocFrogs (gold) {
+  //gold divided by 3 for purchase price
+  numOfFrogs = gold / 3;
+  return numOfFrogs
+}
+let totalFrogs = buyingChocFrogs(4)
+console.log(totalFrogs)
 
 
 ////////////////// PROBLEM 20 ////////////////////
@@ -323,7 +361,20 @@ let sampleString = "Hi, my name is Kylo."
 */
 
 //CODE HERE
-
+function buyingChocFrogs2 (gold2) {
+  //starting number of frogs
+  numOfFrogs2 = 0;
+  //Purchase frogs for 3 gold each
+  while(gold2 >= 3){
+    //decrease gold by purchase price for 1 frog (3)
+    gold2 -= 3;
+    //increase number of frogs bought by 1
+    numOfFrogs2 += 1;
+  }
+  return numOfFrogs2
+}
+let totalFrogs2 = buyingChocFrogs2(14)
+console.log(totalFrogs2)
 
 ////////////////// PROBLEM 21 ////////////////////
 let sampleArray = [0,1,2,3,4,7,5,6,8,9]
