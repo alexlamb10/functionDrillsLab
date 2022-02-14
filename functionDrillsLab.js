@@ -184,8 +184,19 @@ let nameGreeting = nameCheck('Alex')
 */
 
 //CODE HERE
-
-
+const faveColorFinder = function(favColor) {
+  if(favColor === 'red'){
+    return 'red is a great color'
+  }else if(favColor === 'green'){
+    return 'green is a solid favorite color'
+  }else if(favColor === 'black'){
+    return 'so trendy'
+  }else {
+    return 'you need to evaluate your favorite color choice'
+  }
+}
+let colorRating = faveColorFinder('yellow')
+// console.log(colorRating)
 ////////////////// PROBLEM 12 ////////////////////
 let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
 /*
@@ -195,7 +206,12 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
 */
 
 //CODE HERE
-
+function printAllNames(arr) {
+  for(let i = 0; i < arr.length; i++){
+    console.log(arr[i])
+  }
+}
+printAllNames(namesArr)
 
 ////////////////// PROBLEM 13 ////////////////////
 /*
@@ -206,7 +222,16 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
 */
 
 //CODE HERE
-
+function thatsOdd (num){
+  Number(num)
+  if(num % 2 === 0){
+    return "That's not odd!"
+  }else {
+    return 'That is odd indeed!'
+  }
+}
+let oddChecker = thatsOdd(5)
+// console.log(oddChecker)
 
 ////////////////// PROBLEM 14 ////////////////////
 
@@ -219,7 +244,10 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
 */
 
 //CODE HERE
+const bestMovie = (movieTitle) => `${movieTitle} is the best movie ever!`
 
+let bestMovieString = bestMovie('Rocky II')
+// console.log(bestMovieString)
 
 ////////////////// PROBLEM 15 ////////////////////
 let bigOrSmallArray = [1,101, 102, 2, 103, 4, 5, 6, 107]
@@ -233,6 +261,19 @@ let bigOrSmallArray = [1,101, 102, 2, 103, 4, 5, 6, 107]
 */
 
 //CODE HERE
+function bigOrSmall (arr) {
+  let answers = []
+  for(let i = 0; i < arr.length; i++){
+    if(arr[i] > 100){
+      answers.push('big')
+    }else{
+      answers.push('small')
+    }
+  }
+  return arrayEvaluator = answers
+}
+console.log(bigOrSmall(bigOrSmallArray))
+
 
 
 ////////////////// PROBLEM 16 ////////////////////
