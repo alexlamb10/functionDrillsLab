@@ -401,6 +401,8 @@ function ascendingArrayCheck (arr) {
       ascending = false
       break
     }
+    }else{
+      break
     }
     //check last element
     
