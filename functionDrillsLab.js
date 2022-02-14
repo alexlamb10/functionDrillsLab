@@ -87,8 +87,13 @@ const compareNums = (num1, num2) => {
 */
 
 //CODE HERE
-
-
+function add (num1, num2){
+  Number(num1)
+  Number(num2)
+  return num1 + num2
+}
+let sum = add( 5, 10)
+// console.log(sum)
 ////////////////// PROBLEM 7 ////////////////////
 
 /*
@@ -102,7 +107,7 @@ const exclaim = function(str) {
 
 // arrow
 // declaration
-// expression
+let expression = ''
 
 
 
@@ -113,11 +118,11 @@ const exclaim = function(str) {
   Uncomment the answer underneath.
 */
 
-const exclaimTwo = str => {
-  return str.toUpperCase() + '!!!'
-}
+// const exclaimTwo = str => {
+//   return str.toUpperCase() + '!!!'
+// }
 
-// arrow
+let arrow = ''
 // declaration
 // expression
 
@@ -127,7 +132,7 @@ const exclaimTwo = str => {
 
   Brownie points if you use a template string
 */
-
+const exclaimTwo = () => str.toUpperCase() + '!!!'
 
 
 ////////////////// PROBLEM 9 ////////////////////
@@ -142,7 +147,7 @@ function exclaimFour(str) {
 }
 
 // arrow
-// declaration
+let declaration = ''
 // expression
 
 
@@ -156,7 +161,17 @@ function exclaimFour(str) {
 */
 
 //CODE HERE
-
+function nameCheck (name){
+  if(name === 'Steven'){
+    return "What's up Steven?"
+  }else if(name === 'Bryan'){
+    return 'Hey Bryan!'
+  }else {
+    return `Cool name, ${name}`
+  }
+}
+let nameGreeting = nameCheck('Alex')
+// console.log(nameGreeting)
 
 ////////////////// PROBLEM 11 ////////////////////
 /*
