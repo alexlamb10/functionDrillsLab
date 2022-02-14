@@ -383,7 +383,7 @@ let sampleArray = [0,1,2,3,4,7,5,6,8,9]
 */
 
 //CODE HERE
-let sampleArray = [0,1,2,3,4,7,5,6,8,9]
+
 
 let ascending = false
 //CODE HERE
@@ -436,12 +436,14 @@ function pond() {
 
 //This array should contain the variable names (as strings) accessible in the global scope.
 let globalScope = []
+globalScope.push('cute')
 
 //This array should contain the variable names (as strings) accessible in the bathroom function.
 let bathroomScope = []
-
+bathroomScope.push('cute', 'squeaky')
 //This array should contain the variable names (as strings) accessible in the bathtub function.
 let bathtubScope = []
-
+bathtubScope.push('cute', 'nautical')
 //This array should contain the variable names (as strings) accessible in the pond function.
 let pondScope = []
+pondScope.push('cute', 'fluffy')
