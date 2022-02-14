@@ -383,7 +383,35 @@ let sampleArray = [0,1,2,3,4,7,5,6,8,9]
 */
 
 //CODE HERE
+let sampleArray = [0,1,2,3,4,7,5,6,8,9]
 
+let ascending = false
+//CODE HERE
+function ascendingArrayCheck (arr) {
+  //loop through the array
+  for(let i = 0; i < arr.length -1; i++){
+    let currentNum = arr[i]
+    let nextNum = arr[i+1]
+    //check if element before is less than following element
+    if(arr[arr.length-1] > arr[arr.length-2]){
+      ascending = true
+      if(currentNum < nextNum){
+      ascending = true
+    }else {
+      ascending = false
+      break
+    }
+    }
+    //check last element
+    
+  }
+  if (ascending === true){
+    return true
+  }else {
+    return false
+  }
+}
+console.log(ascendingArrayCheck(sampleArray))
 
 ////////////////// PROBLEM 22 ////////////////////
 
